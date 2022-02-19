@@ -1,0 +1,13 @@
+spring:
+  data:
+    cassandra:
+      contact-points: localhost
+      port: 9042
+      local-datacenter: datacenter1
+      keyspace-name: profile
+      schema-action: create-if-not-exists
+      request:
+        timeout: 2s
+      connection:
+        connect-timeout: 2s
+        init-query-timeout: 2s
